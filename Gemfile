@@ -39,6 +39,11 @@ end
 platforms :ruby do
  gem 'unicorn'
 end
+
+# use twitter bootstrap rails
+gem "twitter-bootstrap-rails"
+
+
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
