@@ -29,6 +29,9 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+
+gem 'devise'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -47,9 +50,17 @@ end
 # use twitter bootstrap rails
 gem "twitter-bootstrap-rails"
 
+#active admin
+gem 'activeadmin', github: 'gregbell/active_admin'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+group :development, :test do 
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem "jasminerice", :git => 'https://github.com/bradphelan/jasminerice.git'
+end
